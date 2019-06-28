@@ -5,3 +5,11 @@
 ### 关于ietester软件使用时输入网址无反应的bug：现输入左斜杠，进入D盘根目录，然后输入要测试的网址，成功(ie8测试成功，ie6还是不行)
 
 ### 关于设置a标签的鼠标悬停颜色，a:link中间不空格才能正常显示，且a的href属性中不为空时，a:link才能显示，否则显示a;visited设置的颜色（可将href设为#）
+
+### margin这个属性本质上描述的兄弟和兄弟之间的距离，不要用margin表示父子之间的距离或者儿子与叔叔之间的距离（父子之间可以用父亲的padding）
+
+### 在标准流的盒子中使用margin:0 auto;居中属性，不要在浮动的盒子中用
+
+###在IE6中存在一个bug，当float:left时，设置margin-left:a px;会在最左边形成双倍边距。解决放法一：将margin边距方向与浮动方向相反，即左浮动时设右边距（margin-right:a px;）；方法二：使用“hack”,_margin-left:a px;
+
+### 绝对定位能使盒子脱离标准文档流，和display:block有相同的作用
